@@ -86,7 +86,7 @@ export const NewMovie: React.FC<NewMovieProps> = ({ onAdd }) => {
         name="imdbId"
         label="Imdb ID"
         value={imdbId}
-        onChange={e => setImdbId(e)}
+        onChange={e => setImdbId(e.target.value)}
       />
 
       <div className="field is-grouped">
